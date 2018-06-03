@@ -1,0 +1,150 @@
+/*! ====================
+Web Designer: BigMic69
+Webpage: MCCGraphics.info
+==================== */
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display|Ubuntu");
+/* ---------- COLORS ---------- */
+/* line 1, ../sass/parts/tools/_fonts.sass */
+h1 {
+  font-size: calc(2em + 1vw);
+}
+@media (min-width: 700px) {
+  /* line 1, ../sass/parts/tools/_fonts.sass */
+  h1 {
+    font-size: calc(2.5em + 1vw);
+  }
+}
+
+/* line 5, ../sass/parts/tools/_fonts.sass */
+h2 {
+  font-size: calc(1.75em + 1vw);
+}
+@media (min-width: 700px) {
+  /* line 5, ../sass/parts/tools/_fonts.sass */
+  h2 {
+    font-size: calc(2.25em + 1vw);
+  }
+}
+
+/* line 9, ../sass/parts/tools/_fonts.sass */
+h3 {
+  font-size: calc(1.5em + 1vw);
+}
+@media (min-width: 700px) {
+  /* line 9, ../sass/parts/tools/_fonts.sass */
+  h3 {
+    font-size: calc(2em + 1vw);
+  }
+}
+
+/* line 13, ../sass/parts/tools/_fonts.sass */
+h4 {
+  font-size: calc(1.25em + 1vw);
+}
+@media (min-width: 700px) {
+  /* line 13, ../sass/parts/tools/_fonts.sass */
+  h4 {
+    font-size: calc(1.75em + 1vw);
+  }
+}
+
+/* line 17, ../sass/parts/tools/_fonts.sass */
+h5 {
+  font-size: calc(1em + 1vw);
+}
+@media (min-width: 700px) {
+  /* line 17, ../sass/parts/tools/_fonts.sass */
+  h5 {
+    font-size: calc(1.5em + 1vw);
+  }
+}
+
+/* line 21, ../sass/parts/tools/_fonts.sass */
+h6 {
+  font-size: calc(.8em + 1vw);
+}
+@media (min-width: 700px) {
+  /* line 21, ../sass/parts/tools/_fonts.sass */
+  h6 {
+    font-size: calc(1.2em + 1vw);
+  }
+}
+
+/* line 25, ../sass/parts/tools/_fonts.sass */
+a,
+p {
+  font-size: calc(1em + 1vw);
+}
+@media (min-width: 700px) {
+  /* line 25, ../sass/parts/tools/_fonts.sass */
+  a,
+  p {
+    font-size: calc(1.1em + 1vw);
+  }
+}
+
+/* line 1, ../sass/parts/_base.sass */
+body {
+  font-family: Ubuntu;
+}
+
+/* line 4, ../sass/parts/_base.sass */
+.col-lg-8 mx-auto {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 10vh;
+}
+
+/* line 9, ../sass/parts/_base.sass */
+.imgSmall {
+  width: 60%;
+  height: auto;
+}
+
+/* line 13, ../sass/parts/_base.sass */
+.vidBox {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 1, ../sass/parts/_header.sass */
+header {
+  background: #d7722f;
+  background-image: url("../img/computer-24.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 154px 0 100px;
+}
+@media (min-width: 992px) {
+  /* line 1, ../sass/parts/_header.sass */
+  header {
+    padding: 40vh 0 100px;
+  }
+}
+
+/* line 11, ../sass/parts/_header.sass */
+section {
+  padding: 150px 0;
+}
+
+/* line 2, ../sass/parts/_nav.sass */
+#navbarResponsive li {
+  border-bottom: 1px solid #d7722f;
+  transition: 0.5s ease 0.05s;
+}
+/* line 5, ../sass/parts/_nav.sass */
+#navbarResponsive li:hover {
+  border-bottom: 1px solid #fff;
+}
+/* line 7, ../sass/parts/_nav.sass */
+#navbarResponsive li a {
+  color: #d7722f !important;
+  transition: 0.5s ease 0.05s;
+}
+/* line 10, ../sass/parts/_nav.sass */
+#navbarResponsive li a:hover {
+  color: #fff !important;
+}
