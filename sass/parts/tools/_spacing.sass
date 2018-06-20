@@ -26,21 +26,41 @@
   margin: $margin
   padding: $padding
   box-sizing: border-box
-@mixin box-fluid
+@mixin box_full
   width: 100%
   height: auto
-  margin: 0
-  padding: 0
+  margin: 0 auto
+  padding: 1px
   box-sizing: border-box
+@mixin box_third
+  width: 75%
+  height: auto
+  margin: 0 auto
+  padding: 1px
+  box-sizing: border-box
+@mixin box_half
+  width: 50%
+  height: auto
+  margin: 0 auto
+  padding: 1px
+  box-sizing: border-box
+@mixin box_quarter
+  width: 25%
+  height: auto
+  margin: 0 auto
+  padding: 1px
+  box-sizing: border-box
+
+@mixin box_flex
+  display: flex
+  justify-content: center
+  align-items: center
+
 @mixin row-flex
   display: flex
   flex-flow: row wrap
   justify-content: space-between
 
-@mixin box-center
-  display: flex
-  justify-content: center
-  align-items: center
 
 @mixin space
   +cush(10vh auto, 0)

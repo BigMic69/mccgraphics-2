@@ -1,0 +1,30 @@
+#contact
+  +box_full
+  color: #333
+  background: #f4f4f4
+  .imgBox
+    +box_third
+    margin-bottom: 40px
+    @media (min-width: 993px)
+      +box_half
+      margin-bottom: 10vh
+
+.socialBox
+  width: 100%
+  height: auto
+  margin: 0 auto
+  padding: 1px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-rows: auto
+  grid-gap: 40px
+  @media (min-width: 992px)
+    width: 50%
+  div img
+    +box_full
+    border-radius: 20px
+    box-shadow: 2px 2px 3px rgba(#333, .3)
+    +trans-0
+    &:hover
+      transform: scale(.8)
+      border: 5px solid $clr-fill-secondary

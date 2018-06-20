@@ -1,0 +1,26 @@
+#services
+  color: #f2f2f2
+  background: #444
+  .box p
+    margin-bottom: 30px
+
+.vidBox
+  +box_flex
+  // @media (min-width: 992px)
+    width: 100%
+    margin: 0 auto
+  video
+    width: 100%
+    height: 400px
+    @media (min-width: 992px)
+      height: 440px
+    @media (max-width: 500px)
+      height: 280px
+  iframe
+    width: calc(854px / 3)
+    height: calc(480px / 3)
+    padding: 0
+    @media (min-width: 992px)
+      width: calc(854px / 1.5)
+      height: calc(480px / 1.5)
+      margin: 10vh auto

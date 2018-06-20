@@ -4,11 +4,15 @@ Webpage: MCCGraphics.info
 ==================== */
 
 @import "compass";
-//@import "compass/reset";
+@import "compass/reset";
 
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Playfair+Display|Ubuntu');
 
 @import "parts/toolbox";
 @import "parts/base";
-@import "parts/header";
 @import "parts/nav";
+@import "parts/header";
+@import "parts/about";
+@import "parts/services";
+@import "parts/contact";
+@import "parts/temps";

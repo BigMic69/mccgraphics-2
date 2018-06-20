@@ -1,17 +1,56 @@
-body
-  font-family: Ubuntu
-
-.col-lg-8 mx-auto
-  width: 100%
-  margin: 0 auto
-  padding: 0 0 10vh
-
-.imgSmall
-  width: 60%
-  height: auto
-
-.vidBox
-  width: 80%
-  height: auto
-  margin: 0 auto
+*
+  font-size: 16px
+  margin: 0
   padding: 0
+  box-sizing: border-box
+
+body
+  +box_full
+  font-family: Ubuntu
+  // font-size: 1rem
+  background: #444 !important
+
+section
+  width: 100%
+  margin: 0
+  padding: 70px 0 0 !important
+  border-bottom: 2px solid #333
+  background: rgba(#666, 0)
+
+.container,
+.row
+  +box_full
+
+// .box
+  +box_full
+  @media (min-width: 992px)
+    width: 80%
+    height: auto
+    margin: 0 auto 10vh
+    padding: 1px
+
+.box
+  width: 100%
+  margin: 0 auto 10vh
+  padding: 1px
+  @media (min-width: 993px)
+  width: 100%
+  .imgBox
+    +box_half
+    img
+      +box_full
+
+
+h2
+  margin-bottom: 3vh
+  padding: 5px
+  text-align: center
+  border-bottom: 2px solid $clr-fill-secondary
+
+p
+  margin-bottom: 40px
+  text-align: center
+  line-height: 1.7em
+
+footer p
+  font-size: 1.2rem
