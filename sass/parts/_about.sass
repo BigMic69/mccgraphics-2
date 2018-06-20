@@ -1,11 +1,19 @@
 #about
-  color: #333
-  background: #f2f2f2
+  // color: #333
+  // background: #f2f2f2
   ul
     +box_third
     margin-bottom: 40px
     li
-      margin: 0 auto
-      padding: 0
+      margin: 0 0 20px 5vh
+      padding: 5px 10px
+      font-weight: bold
       line-height: 1.5em
-      list-style-type: disc
+      list-style-type: decimal
+      +box_shadow
+  .imgBox
+    +box_third
+    margin-bottom: 40px
+    @media (min-width: 993px)
+      +box_quarter
+      margin-bottom: 10vh

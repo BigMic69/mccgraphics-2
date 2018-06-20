@@ -1,6 +1,13 @@
 #templates
   min-height: 90vh
-  color: #f3f3f3
-  a
-    display: block
-    font-size: 1.3rem
+  // color: #f3f3f3
+  .tempBox
+    +box_full
+    @media (min-width: 993px)
+      +box_half
+    a
+      display: block
+      font-size: 1.3rem
+      text-align: center
+      +box_shadow
+      background: #333

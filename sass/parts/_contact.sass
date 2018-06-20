@@ -1,12 +1,15 @@
 #contact
   +box_full
-  color: #333
-  background: #f4f4f4
+  // color: #333
+  // background: #f4f4f4
+  p
+    text-transform: uppercase
+    +box_shadow
   .imgBox
     +box_third
     margin-bottom: 40px
     @media (min-width: 993px)
-      +box_half
+      +box_quarter
       margin-bottom: 10vh
 
 .socialBox
@@ -27,4 +30,4 @@
     +trans-0
     &:hover
       transform: scale(.8)
-      border: 5px solid $clr-fill-secondary
+      box-shadow: 2px 2px 3px rgba($clr-fill-secondary, .7)

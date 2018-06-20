@@ -14,6 +14,12 @@ $clr-burgundy: #1c0103
 $clr-border-primary: $clr-light-grey
 $clr-border-secondary: $clr-orange
 
+@mixin box_shadow
+  padding: 10px
+  background: #dedede
+  box-shadow: 1px 1px 3px rgba(#444, .5)
+  border-bottom: 1px solid rgba(#333, .4)
+  border-right: 1px solid rgba(#333, .4)
 
 @mixin txtShadow($shadow-clr)
   text-shadow: .8px .8px $shadow-clr
