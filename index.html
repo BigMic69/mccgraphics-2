@@ -21,7 +21,7 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
+  <!-- START NAVIGATION SECTION -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container-fluid">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -49,6 +49,7 @@
     </div>
   </nav>
 
+  <!-- START HEADER SECTION -->
   <header class="text-white">
     <div id="welcomeBox" class="container-fluid text-center">
       <h1>MCCGraphics.info</h1>
@@ -56,17 +57,21 @@
     </div>
   </header>
 
+  <!-- START ABOUT SECTION -->
   <section id="about">
     <div class="container-fluid">
       <div class="row">
         <div class="box">
           <h2>About this page</h2>
           <p class="lead">MCCGraphics.info is striving to be the place for unique graphical content. <br> Customers will be a total part of the design experience from start to finish.</p>
-          <ul>
-            <li>Contributing in the initial content & coloring conceptions</li>
-            <li>Deciding towards 2D or 3D graphics</li>
-            <li>Choosing the time table for thing to happen</li>
-          </ul>
+          <div class="menu--container">
+            <h3 id="expShow">Experience Your Design</h3>
+            <ul id="expList">
+              <li>Contributing in the initial content & coloring conceptions</li>
+              <li>Deciding towards 2D or 3D graphics</li>
+              <li>Choosing the time table for thing to happen</li>
+            </ul>
+          </div>
           <div class="imgBox">
             <img class="imgAbout" src="/img/rim-ninja-1b.png" alt="">
           </div>
@@ -75,6 +80,7 @@
     </div>
   </section>
 
+  <!-- START SERVICES SECTION -->
   <section id="services">
     <div class="container-fluid">
       <div class="row">
@@ -103,11 +109,15 @@
     </div>
   </section>
 
+  <!-- START CONTACT SECTION -->
   <section id="contact">
     <div class="container-fluid">
       <div class="row">
         <div class="box">
           <h2>Contact us</h2>
+          <div id="contactImg">
+            <img src="./img/mcc-info-1-1.png" alt="">
+          </div>
           <p class="lead">Computer repair services are also available <br> EMAIL: bigmic69@gmail.com</p>
           <div class="imgBox">
             <img class="imgContact" src="/img/computer-1c.png" alt="">
@@ -115,23 +125,23 @@
           <div class="socialBox">
             <div class="social-1">
               <a href="www.linkedin.com/in/michael-caldwell-29724211b">
-                  <img src="./img/icons/Linkedin-Icon.png" alt="">
-                </a>
+                <img src="./img/icons/Linkedin-Icon.png" alt="">
+              </a>
             </div>
             <div class="social-2">
               <a href="">
-                  <img src="./img/icons/Facebook-Icon.png" alt="">
-                </a>
+                <img src="./img/icons/Facebook-Icon.png" alt="">
+              </a>
             </div>
             <div class="social-3">
               <a href="">
-                  <img src="./img/icons/Google-Plus-Icon.png" alt="">
-                </a>
+                <img src="./img/icons/Google-Plus-Icon.png" alt="">
+              </a>
             </div>
             <div class="social-4">
               <a href="">
-                  <img src="./img/icons/Twitter-Icon.png" alt="">
-                </a>
+                <img src="./img/icons/Twitter-Icon.png" alt="">
+              </a>
             </div>
           </div>
         </div>
@@ -139,6 +149,7 @@
     </div>
   </section>
 
+  <!-- START TEMPLATES SECTION -->
   <section id="templates">
     <div class="container-fluid">
       <div class="row">
@@ -146,15 +157,29 @@
           <h2>Templates</h2>
           <p class="lead">Tools used for Web Design include Cmder (terminal), Atom (text editor), Wamp (local server), FileZilla (ftp), WordPress, Grid, Flexbox, Sass, Compass, and Git. </p>
           <div class="tempBox">
-            <a href="http://mccgraphics.info/mcc-extended/" target="_blank">Templates Page (link)</a><br>
-            <a href="http://mccgraphics.info/my_project/" target="_blank">Blend4Web 3D Page (link)</a>
+            <a href="http://mccgraphics.info/mcc-extended/" target="_blank">
+              <div class="mcc--link">
+                <div class="mcc--link-imgBox">
+                    <img src="./img/btn-1.png" alt="">
+                </div>
+                <h3>Templates Page</h3>
+              </div>
+            </a>
+            <a href="http://mccgraphics.info/my_project/" target="_blank">
+              <div class="mcc--link">
+                <div class="mcc--link-imgBox">
+                    <img src="./img/btn-1.png" alt="">
+                </div>
+                <h3>Blend4Web 3D Page</h3>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- START FOOTER SECTION -->
   <footer class="bg-dark">
     <div class="container-fluid">
       <p class="text-center text-white">Copyright &copy; MCCGraphics.info 2018</p>
@@ -171,6 +196,7 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+  <script src="js/my-js.js" charset="utf-8"></script>
 
 </body>
 

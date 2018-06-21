@@ -1,8 +1,17 @@
 #contact
   +box_full
+  &:hover #contactImg
+    transform: scale(1.2)
   // color: #333
   // background: #f4f4f4
+  #contactImg
+    +box_third
+    margin-bottom: 20px
+    +trans-0
+    @media (min-width: 993px)
+      +box_half
   p
+    font-size: 1rem
     text-transform: uppercase
     +box_shadow
   .imgBox
@@ -11,6 +20,9 @@
     @media (min-width: 993px)
       +box_quarter
       margin-bottom: 10vh
+
+img
+  +box_full
 
 .socialBox
   width: 100%
@@ -23,11 +35,15 @@
   grid-gap: 40px
   @media (min-width: 992px)
     width: 50%
-  div img
+  div
     +box_full
-    border-radius: 20px
-    box-shadow: 2px 2px 3px rgba(#333, .3)
-    +trans-0
-    &:hover
-      transform: scale(.8)
-      box-shadow: 2px 2px 3px rgba($clr-fill-secondary, .7)
+    @media (min-width: 700px)
+      +box_third
+    img
+      +box_full
+      border-radius: 20px
+      box-shadow: 2px 2px 3px rgba(#333, .3)
+      +trans-0
+      &:hover
+        transform: scale(.8)
+        box-shadow: 2px 2px 3px rgba($clr-fill-secondary, .7)

@@ -3,11 +3,44 @@
   // color: #f3f3f3
   .tempBox
     +box_full
+    margin-bottom: 10px
     @media (min-width: 993px)
       +box_half
     a
-      display: block
-      font-size: 1.3rem
+      // font-size: 1.3rem
       text-align: center
-      +box_shadow
-      background: #333
+
+.mcc--link
+  +box_full
+  display: grid
+  grid-gap: 5px
+  grid-template-columns: 1fr 3fr
+  grid-template-rows: auto
+  margin-bottom: 20px
+  border-bottom: 1px solid rgba(#f3f3f3, .5)
+  border-right: 1px solid rgba(#f3f3f3, .5)
+  background: rgba(#333, .3)
+  // h-length, v-length, blur, spread, colour
+  box-shadow: 3px 2px 4px rgba(#333, .7)
+  padding: 5px
+  &:hover .mcc--link-imgBox
+    transform: scale(.8)
+  @media (min-width: 993px)
+    +box_full
+    margin-bottom: 5vh
+  h3
+    +box_full
+    grid-column-start: 2
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    color: $clr-fill-secondary
+    text-transform: capitalize
+    font-weight: bold
+    text-shadow: 2px 1px 2px rgba(#444, .6)
+    // line-height: 1.6rem
+  .mcc--link-imgBox
+    +box_third
+    +trans-0
+    transform: scale(1)

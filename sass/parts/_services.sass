@@ -1,8 +1,11 @@
 #services
   // color: #f2f2f2
   // background: #444
-  .box p
-    margin-bottom: 30px
+  .box
+    p
+      margin-bottom: 30px
+    .imgBox
+      +box_third
 
 .vidBox
   +box_flex
@@ -20,7 +23,9 @@
     width: calc(854px / 3)
     height: calc(480px / 3)
     padding: 0
+    @media (min-width: 700px)
+      width: calc(854px / 2)
+      height: calc(480px / 2)
     @media (min-width: 992px)
       width: calc(854px / 1.5)
       height: calc(480px / 1.5)
-      margin: 10vh auto
