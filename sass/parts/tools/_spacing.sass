@@ -1,8 +1,14 @@
-@mixin bg-cover-fixed
+@mixin bg_cover_fixed
   background:
     size: cover
     position: center
-    attachment: fixed
+    repeat: no-repeat
+
+@mixin bg_contain_fixed
+  background:
+    size: contain
+    position: center
+    repeat: no-repeat
 
 @mixin bg-vert
   background:
@@ -16,7 +22,7 @@
   padding: $padding
   box-sizing: border-box
 @mixin no-cush
-  margin: 0
+  margin: 0 auto
   padding: 0
   box-sizing: border-box
 
@@ -26,6 +32,8 @@
   margin: $margin
   padding: $padding
   box-sizing: border-box
+
+
 @mixin box_full
   width: 100%
   height: auto

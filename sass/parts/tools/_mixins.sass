@@ -1,0 +1,16 @@
+@mixin img_shadow
+  border-bottom: 1px solid #888
+  border-right: 1px solid #888
+  border-radius: 20px
+  box-shadow: 2px 2px 4px rgba(#eee, .4)
+
+@mixin img_optimization
+  @media (min-width: 300px)
+    max-width: 300px
+    height: auto
+    margin: 0 auto
+    padding: 1px
+  @media (min-width: 700px)
+    width: 50%
+  @media (min-width: 993px)
+    width: 100%

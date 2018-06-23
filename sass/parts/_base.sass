@@ -13,11 +13,10 @@ body
   background: #444 !important
 
 section
-  width: 100%
-  margin: 0
+  +box_full
   padding: 70px 0 0 !important
   border-bottom: 2px solid #333
-  background: rgba(#666, 0)
+  // background: rgba(#666, 0)
 
 section:nth-child(odd)
   color: #333
@@ -40,15 +39,14 @@ section:nth-child(even)
     padding: 1px
 
 .box
-  width: 100%
-  margin: 0 auto 10vh
-  padding: 1px
-  @media (min-width: 993px)
-  width: 100%
+  +box_full
+  padding: 20px
   .imgBox
-    +box_half
-    img
-      +box_full
+    +box_full
+    margin-bottom: 40px
+    padding: 20px
+  @media (min-width: 993px)
+    +box_full
 
 
 h2
