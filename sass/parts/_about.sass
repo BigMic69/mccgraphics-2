@@ -1,40 +1,38 @@
-#about
-  // .imgBox
-  //   +box_full
-  //   margin-bottom: 40px
-  //   padding: 20px
-  //   +box_shadow
-  //   @media (min-width: 700px)
-  //     +box_half
-  //   @media (min-width: 993px)
-  //     +box_quarter
-  //     margin-bottom: 10vh
+#about .box
   .imgBox
-    margin-bottom: 40px
-    img
-      width: 280px
-      height: 273px
-      display: flex
-      background-image: url('../img/rim-ninja-300.png')
-      +bg_contain_fixed
-    @media (min-width: 700px)
-      // +box_full
+    +box_third
+    display: flex
+    // margin-bottom: 40px
+    +box_shadow
+    .imgAbout
+      width: 300px
+      height: 300px
+      +no_cush
       // display: flex
-      img
-        width: calc(600px / 1.5)
-        height: calc(637px / 1.5)
-        display: flex
-        background-image: url('../img/rim-ninja-600.png')
+      justify-content: center
+      background-image: url('../img/rim-ninja-mix-300.png')
+      +bg_contain_fixed
+      border-radius: 20px
+    @media (min-width: 700px)
+      +box_third
+      display: flex
+      .imgAbout
+        width: 600px
+        height: 600px
+        +no_cush
+        // display: flex
+        background-image: url('../img/rim-ninja-mix-600.png')
         +bg_contain_fixed
     @media (min-width: 993px)
       +box_half
-      img
-        background-image: url('../img/rim-ninja-800.png')
+      .imgAbout
+        width: 800px
+        width: 800px
+        +no_cush
+        background-image: url('../img/rim-ninja-mix-800.png')
         +bg_contain_fixed
 
 
-  p
-    +box_shadow
 
 .menu--container
   +box_full
@@ -43,12 +41,16 @@
   background: rgba(#333, .4)
   box-shadow: 3px 2px 3px rgba(#333, .6)
   border-radius: 20px
-  @media (min-width: 993px)
+  border-bottom: 1px solid rgba(#333, .6)
+  border-right: 1px solid rgba(#333, .6)
+  @media (min-width: 600px)
     +box_third
-    margin-bottom: 5vh
+    margin-bottom: 10vh
     padding: 20px
   h3
     +header_style_1
+    color: #333
+    font-weight: bold
     text-align: center
     // margin-bottom: 20px
     // padding: 10px 20px
@@ -60,14 +62,15 @@
   ul
     +box_full
     display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    align-items: stretch
+    flex-direction: column
+    // flex-wrap: wrap
+    // align-items: stretch
     @media (min-width: 993px)
       +box_third
     li
       margin: 0 0 20px
       padding: 5px 10px
+      font-size: 1.2rem
       font-weight: bold
       line-height: 1.5em
       // list-style-type: decimal

@@ -14,10 +14,12 @@
         +box_half
 
 .vidBox
-  +box_flex
-  // @media (min-width: 992px)
-    width: 100%
-    margin: 0 auto
+  +box_full
+  display: flex
+  @media (min-width: 600px)
+    +box_third
+  @media (min-width: 900px)
+    +box_half
   video
     width: 100%
     height: 400px
@@ -26,12 +28,12 @@
     @media (max-width: 500px)
       height: 280px
   iframe
-    width: calc(854px / 3)
-    height: calc(480px / 3)
-    padding: 0
-    @media (min-width: 700px)
-      width: calc(854px / 2)
-      height: calc(480px / 2)
+    width: calc(854px / 2.6)
+    height: calc(480px / 2.6)
+    margin: 10px auto
+    @media (min-width: 600px)
+      width: calc(854px / 1.9)
+      height: calc(480px / 1.9)
     @media (min-width: 992px)
       width: calc(854px / 1.5)
       height: calc(480px / 1.5)

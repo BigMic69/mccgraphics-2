@@ -11,22 +11,27 @@ body
   font-style: italic
   // font-size: 1rem
   background: #444 !important
+  @media (min-width: 600px)
+    padding: 0 20px
 
 section
   +box_full
-  padding: 70px 0 0 !important
+  padding: 70px 0 0
   border-bottom: 2px solid #333
   // background: rgba(#666, 0)
 
 section:nth-child(odd)
-  color: #333
+  color: #f2f2f2
   background: #efefe5
+  h2
+    color: #333
 
 section:nth-child(even)
   color: #f2f2f2
   background: #444
 
 .container,
+.container-fluid,
 .row
   +box_full
 
@@ -40,13 +45,14 @@ section:nth-child(even)
 
 .box
   +box_full
-  padding: 20px
+  margin-bottom: 5vh
   .imgBox
     +box_full
-    margin-bottom: 40px
-    padding: 20px
-  @media (min-width: 993px)
-    +box_full
+    // margin-bottom: 40px
+    img
+      +box_full
+  @media (min-width: 600px)
+    margin-bottom: 10vh
 
 
 h2
@@ -57,7 +63,7 @@ h2
   font-weight: 600
   border-bottom: 1vh solid $clr-fill-secondary
 
-p
+// p
   margin-bottom: 40px
   text-align: center
   line-height: 2rem

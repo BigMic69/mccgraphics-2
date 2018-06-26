@@ -17,14 +17,14 @@
     repeat: no-repeat
     // attachment: fixed
 
-@mixin cush($margin, $padding)
+@mixin cush_config($margin, $padding)
   margin: $margin
   padding: $padding
   box-sizing: border-box
-@mixin no-cush
+@mixin no_cush
   margin: 0 auto
-  padding: 0
-  box-sizing: border-box
+  padding: 1px
+  // box-sizing: border-box
 
 @mixin box-config($width, $height, $margin, $padding)
   width: $width
