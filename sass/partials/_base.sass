@@ -1,0 +1,39 @@
+*
+  margin: 0
+  padding: 0
+  font-size: 16px
+  box-sizing: border-box
+
+body
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto
+  grid-gap: 30px 0
+  // +box__full
+  font-family: 'Ubuntu', Cormorant, Merriweather
+  +clr__combo--primary
+  // justify-content: space-around
+
+.section__box
+  grid-column: 2/12
+  display: grid
+  padding: 8vh 10px
+
+.container__box
+  grid-column: span 10
+  display: grid
+
+.img__box
+  grid-column: 2/4
+
+.img--default
+  +box__full
+
+h1
+  +title__heading--one
+
+h2
+  +title__heading--two
+  +box__margin--five-vh
+  +text__align--media
+  border-bottom: 1px solid #D7722F
